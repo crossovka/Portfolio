@@ -15,7 +15,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		// отступ равный паддингу у coll т.к там отсуп прописан со всех сторон то этот контейнер начинается чуть правее чем край	
-		margin-left: -25px;
+		padding-left: -25px;
 	}
 }
 .portfolio {

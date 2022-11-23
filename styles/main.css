@@ -270,7 +270,7 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0.6rem 0;
+    margin: 0;
   }
   .header__logo {
     display: none;
@@ -598,7 +598,7 @@ h6 {
   background-image: url(/img/hello-backgound.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 300px 0px 132px 0px;
+  padding: 400px 0px 132px 0px;
   overflow: hidden;
 }
 .hello__inner {
@@ -882,6 +882,7 @@ h6 {
   }
   .about-me__who-i-am {
     width: 100%;
+    margin: 0;
   }
   .about-me__picture {
     display: none;
@@ -1061,7 +1062,7 @@ h6 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: -25px;
+  padding-left: -25px;
 }
 
 .portfolio__col {
