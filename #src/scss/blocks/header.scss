@@ -94,15 +94,14 @@
 	}
 }
 
-
+body.lock{
+	overflow: hidden;
+}
 
 
 // /* mobile */
 @media (max-width: 767.98px){
 	// последтсвия отсупов на планшете
-	body.lock{
-		overflow: hidden;
-	}
 	.header__logo{
 		display: block;
 		flex: 0 1 70px;
