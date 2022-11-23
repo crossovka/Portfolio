@@ -277,6 +277,9 @@ h6 {
   }
 }
 @media (max-width: 767.98px) {
+  body.lock {
+    overflow: hidden;
+  }
   .header__logo {
     display: block;
     -webkit-box-flex: 0;
