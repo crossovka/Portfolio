@@ -1,0 +1,98 @@
+// ощущение что все на костылях получилось с позиционированием левого блока и картинки внутри по середине хотя работает так как надо и даже лучше(
+.modal {
+	// чтобы не пр ижимало к краям
+	padding: 20px;
+	&__projects {
+		display: flex;
+		align-items: center;
+		// height: 500px;
+		
+		// min-width: 0;
+		.fa-solid{
+			color: $ye-tx;
+			padding: 0px 10px 0px 10px;
+		}
+	}
+}
+.projects {
+
+	&__preview {
+		width: 66%;
+	}
+
+	&__content {
+		width: 34%;
+		padding: 10px 0px 0px 20px;
+	}
+}
+.preview {
+
+	&__item {
+	}
+
+	&__image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		top: 50%;
+		left: 50%;
+
+		// min-width: 0;
+	}
+
+	&__img {
+		object-fit: cover;
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+.content {
+
+	&__title {
+		margin-bottom: 35px;
+	}
+
+	&__text {
+		font-family: $fs;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1rem;
+		line-height: 36px;
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.01em;
+		color: $wh-tx;
+	}
+
+	&__footer {
+		width: 100%;
+		padding: 30px 0px 0px;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.footer {
+	
+	&__left {
+		cursor: pointer;
+	}
+
+	&__btn {
+		border: none;
+		background: none;
+		text-transform: uppercase;
+		color: $wh-tx;
+	}
+	&__btn--past {
+	}
+
+	&__right {
+		cursor: pointer;
+	}
+
+	&__btn--next {
+	}
+}

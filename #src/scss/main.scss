@@ -1,0 +1,67 @@
+// обнуление
+@import "null.scss";
+
+// ограничивающие контейнеры
+@import "containers.scss";
+
+// переменные и переиспользование по bem
+@import "vars.scss";
+
+/*  -------- блоки на сайте --------------  */
+
+@import "./blocks/header.scss";
+
+@import "./blocks/footer.scss";
+
+@import "./blocks/hello.scss";
+
+@import "./blocks/about_me.scss";
+
+@import "./blocks/my_skils.scss";
+
+@import "./blocks/projects.scss";
+
+@import "./blocks/slider.scss";
+
+
+// модальные окна
+@import './modals/modal.scss';
+
+@import './modals/modal_projects.scss';
+
+/*  ---------------------------------------  */
+
+// шрифт с google fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800;900&display=swap');
+
+/*  -------------------  */
+html,
+body{
+	font-family: 'Roboto Slab';
+	font-size: 18px;
+	color: #FFFFFF;
+	background-color: #1A1A1A;
+
+	// для того, чтобы когда модальное окно открывалось у боди не было скрола когда буду вызывать модальное боди буду выдаватьь этот класс
+	&.no-scroll{
+		overflow: hidden;
+	}
+}
+
+.wpapper{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	// overflow-x: hidden;
+}
+main{
+	flex: 1 1 auto;
+	// прижал footer у низу
+}
+// ----------------------------------------------------------------------
+
+// ::-webkit-scrollbar{}
+// ::-webkit-scrollbar-thumb{
+// }

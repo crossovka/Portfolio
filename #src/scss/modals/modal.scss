@@ -1,0 +1,65 @@
+.modal {
+	//  по умолчанию none потом буду выдавать flex чтобы окно появлялось
+	display: none;
+	// если у .modal будет выдаваться класс show, то
+	&.show{
+		display: flex;
+	}
+
+	// потом margin auto чтобы по середине
+	width: 100%;
+	height: 100%;
+	padding: 0px 15px 0px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+
+	// маска
+	background-color: rgba(35, 26, 59, 0.591);
+
+	// чтобы скролл был не в внутри диалога когда выдается body класс no-scroll (в main.scss)
+	overflow: auto;
+
+	&__dialog {
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+
+		// background-color: #fff;
+		padding: 20px;
+		background-color: #1A1A1A;
+
+		// для того чтобы кнопка закрытия позиционировалась относительно этого
+		position: relative;
+
+		// изначально переворачиваю окно чтобы потом добавить плавность при его всплывании
+		transform: scale(0);
+		transition: transform .2s linear;
+	}
+	
+	&__close{
+		// надо бует потом скачать это в svg
+		z-index: 66;
+		cursor: pointer;
+
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 60px;
+		height: 60px;
+		
+		border-radius: 50%;
+		background: transparent;
+		background-image: url(/img/3388569.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center center;
+		
+		transition: transform .3s linear;
+		&:hover{
+			transform: rotate(90deg);
+		}
+	}
+}

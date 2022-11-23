@@ -1,0 +1,235 @@
+.footer {
+	padding: 61px 0px 0px;
+	// margin: 61px 0px 0px;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title{
+		width: 100%;
+		justify-content: flex-start;
+		display: flex;
+	}
+	.subtitle{
+	}
+	&__content {
+		// padding: 57px 0px 120px;
+		margin: 112px 0px 90px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__contact {
+		width: 50%;
+		// width: 50%;
+	}
+
+	&__get-in-touch {
+		margin-left: 50px;
+		width: 50%;
+		// width: 50%;
+	}
+
+	&__created {
+		.footer__created-by{
+			min-height: 100%;
+			padding-right: 9px;
+		}
+		.footer__copyrught{
+			min-height: 100%;
+		}
+		flex-wrap: nowrap;
+		width: 100%;
+		min-height: 73px;
+		font-family: $fs;
+		font-weight: 700;
+		font-size: 1.33rem;
+		line-height: 32px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: $wh-tx;
+	}
+	&__right-line{
+		padding-right: 9px;
+		border-right: 3px solid #FFFFFF;
+	}
+}
+
+// .form * {
+// 	outline: none;
+// }
+// .form__item:focus{
+// 	box-sizing: 0 0 15px #F4FA1A;
+// 	// transition: all 0.5s ease 0s;
+// }
+
+
+.form {
+	display: flex;
+	flex-direction: column;
+	&__row {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 27px;
+	}
+	
+	&__item {
+		flex: 1 1 100%;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		textarea,input{
+			padding: 0px 5px 0px 10px;
+			height: 100%;
+			width: 100%;
+			background-color: $grey;
+			border-radius: 10px;	
+			font-family: $fs;
+			color: #5F5F5F;
+		}
+		textarea{
+			padding: 10px;
+			min-height: 135px;
+			resize: vertical;
+			max-height: 177px;
+		}
+	}
+	&__name {
+		// width: 260px;
+		height: 57px;
+	}
+
+	&__email {
+		margin-left: 18px;
+		// width: 327px;
+		height: 57px;
+	}
+
+	&__theme {
+		height: 57px;
+		margin-bottom: 27px;
+	}
+
+	&__message {
+		height: 135px;
+	}
+}
+.get-in-touch {
+
+	&__content {
+	}
+
+	&__text {
+		flex-wrap: wrap;
+		// height: 160px;
+		// width: 601px;
+		width: 100%;
+		margin: 52px 0px 25px;
+		font-family: $fs;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.33rem;
+		line-height: 32px;
+		color: $wh-tx;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		font-family: $fs;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 40px;
+		text-align: center;
+		color: $wh-tx;
+		i{
+			color: $ye-tx;
+		}
+	}
+
+	&__about {
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		i{
+			width: 30px;
+			height: auto; 
+		}
+	}
+
+	&__row {
+
+	}
+	&__ue{
+		padding-left: 33px;
+	}
+}
+
+// адаптив для табле
+@media (max-width: 991.98px) {
+	.form {
+		&__row {
+			justify-content: center;
+			flex-direction: column;
+			margin: 0px;
+		}
+
+		&__item {
+			margin: 0px 0px 27px 0px;
+			input{
+				height: 57px;
+			}
+		}
+
+		&__name {
+		}
+
+		&__email {
+		}
+
+		&__theme {
+		}
+
+		&__message {
+		}
+}
+	.get-in-touch {
+
+		&__content {
+		}
+
+		&__text {
+			flex-wrap: wrap;
+			// width: 601px;
+			width: 100%;
+			margin-top: 10px;
+			font-family: $fs;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.33rem;
+			line-height: 32px;
+			color: $wh-tx;
+		}
+	}
+}
+
+
+/* mobile */
+@media (max-width: 767.98px){
+	.footer__content{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
+/* mobile small*/
+@media (max-width: 565.98px){
+	
+}
