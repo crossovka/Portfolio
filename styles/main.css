@@ -596,6 +596,13 @@ body.lock {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .footer__contact {
+    width: 100%;
+  }
+  .footer__get-in-touch {
+    margin: 0;
+    width: 100%;
+  }
 }
 /* mobile small*/
 .hello {
