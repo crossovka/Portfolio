@@ -176,6 +176,7 @@
 	.form {
 		&__row {
 			justify-content: center;
+			text-align: center;
 			flex-direction: column;
 			margin: 0px;
 		}
@@ -233,10 +234,15 @@
 		margin: 0;
 		width: 100%;
 	}
+	.footer__created{
+		font-size: 1rem;
+	}
 }
 
 
 /* mobile small*/
 @media (max-width: 565.98px){
-	
+	.footer__created{
+		font-size: 0.7rem;
+	}
 }
