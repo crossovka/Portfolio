@@ -1,6 +1,6 @@
 // инициализация jquery
 $(document).ready(function () {
-  // инициализация слайдера
+	// инициализация слайдера
 	$('.slider__content').slick({
 		// если слайды заканчиваются то все начинается заново
 		infinity: true,
@@ -21,12 +21,12 @@ $(document).ready(function () {
 		// адаптивность по брейкпоинтам из офф документации. брейкпоитны из containers.scss
 		responsive: [
 			{
-				// 
-				breakpoint:  1306,
+				//
+				breakpoint: 1306,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
-				}
+				},
 			},
 			{
 				// планшеты
@@ -34,28 +34,30 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
-				}
+				},
 			},
 			{
 				// мобилки
-				breakpoint:  767.98,
+				breakpoint: 767.98,
 				settings: {
+					dots: false,
 					slidesToShow: 1,
 					slidesToScroll: 1,
-				}
+				},
 			},
 			{
 				// мобилки поменьше
-				breakpoint:  565.98,
+				breakpoint: 565.98,
 				settings: {
+					dots: false,
 					slidesToShow: 1,
-					slidesToScroll: 1, 
-				}
-			}
+					slidesToScroll: 1,
+				},
+			},
 			// You can unslick at a given breakpoint now by adding:
 			// settings: "unslick"
 			// instead of a settings object
-		]
+		],
 	});
 	$('.slider__content-next').slick({
 		//  стартовый слайд
@@ -79,7 +81,7 @@ $(document).ready(function () {
 		// адаптивность по брейкпоинтам из офф документации. брейкпоитны из containers.scss
 		responsive: [
 			// {
-			// 	// 
+			// 	//
 			// 	breakpoint:  1306,
 			// 	settings: {
 			// 		slidesToShow: 2,
@@ -96,23 +98,23 @@ $(document).ready(function () {
 			// },
 			{
 				// мобилки
-				breakpoint:  767.98,
+				breakpoint: 767.98,
 				settings: {
 					slidesToShow: 1,
-					slidesToScroll: 1
-				}
+					slidesToScroll: 1,
+				},
 			},
 			{
 				// мобилки поменьше
-				breakpoint:  565.98,
+				breakpoint: 565.98,
 				settings: {
 					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
+					slidesToScroll: 1,
+				},
+			},
 			// You can unslick at a given breakpoint now by adding:
 			// settings: "unslick"
 			// instead of a settings object
-		]
+		],
 	});
 });

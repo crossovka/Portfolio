@@ -4,7 +4,8 @@ $('.menu__link').on('click', function (event) {
 		.stop()
 		.animate(
 			{
-				scrollTop: $($anchor.attr('href')).offset().top-$('header')[0].offsetHeight,
+				scrollTop:
+					$($anchor.attr('href')).offset().top - $('header')[0].offsetHeight,
 			},
 			{
 				duration: 200,
