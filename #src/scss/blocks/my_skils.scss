@@ -229,3 +229,26 @@
 		}
 	}
 }
+/* mobile small*/
+@media (max-width: 565.98px){
+	.subtitle__con{
+		font-style: normal;
+		font-family: $fs;
+		font-size: 1rem;
+		font-weight: 900;
+		display: flex;
+		line-height: 40px;
+		text-align: center;
+		align-items: center;
+		display: flex;
+		color: $wh-tx;
+		flex-direction: row;
+	}
+	.blocks__item{
+		i{
+			font-size: 4.5rem;
+		}
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
