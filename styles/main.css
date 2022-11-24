@@ -599,7 +599,7 @@ body.lock {
 }
 /* mobile small*/
 .hello {
-  background-image: url(/img/hello-backgound.png);
+  background-image: url(../../../img/hello-backgound.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 400px 0px 132px 0px;
