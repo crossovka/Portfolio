@@ -122,9 +122,23 @@
 	.hello__content{
 		padding: 0px;
 	}
+	.hello{
+		padding: 150px 0px;
+	}
+	
 }
 
 /* mobile small*/
 @media (max-width: 565.98px){
-
+	.hello__subtitle{
+		width: 307px;
+		justify-content: flex-start;
+	}
+	.hello__title{
+		font-size: 3.5rem;
+	}
+	// .button{
+	// 	width: 150px;
+	// 	padding: 0px 6px;
+	// }
 }

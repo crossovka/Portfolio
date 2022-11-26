@@ -24,11 +24,11 @@
 					</div>
 					<nav class="header__menu">
 						<ul class="menu__list">
-								<li><a href="#hello" class="menu__link">Обо мне</a></li>
-								<li><a href="#about-me" class="menu__link">Навыки</a></li>
-								<li><a href="#skills" class="menu__link">проекты</a></li>
-								<li><a href="#projects" class="menu__link">Достижения</a></li>
-								<li><a href="#slider" class="menu__link"><span class="yellow-text">Связаться</span></a></li>
+								<li><a href="#about-me" class="menu__link">Обо мне</a></li>
+								<li><a href="#skills" class="menu__link">Навыки</a></li>
+								<li><a href="#projects" class="menu__link">проекты</a></li>
+								<li><a href="#slider" class="menu__link">Достижения</a></li>
+								<li><a href="#footer" class="menu__link"><span class="yellow-text">Связаться</span></a></li>
 						</ul>
 					</nav>
 					<!-- <div class="header__burger">
@@ -47,11 +47,12 @@
 							<div class="hello__subtitle">Привет,<span class="yellow-text">Я</span></div>
 							<h1 class="hello__title">Вячеслав</h1>
 							<h1 class="hello__title next">Чекасин</h1>
-							<div class="button">
+							<a href="#footer" class="button" style="color: #fff;">
 								<button id="contact" class="button__contacnt">Связаться</button>
-								<img src="./img/Right-Arrow.svg" alt="" class="button__right-arrow">
+								<!-- <img src="./img/Right-Arrow.svg" alt="" class="button__right-arrow"> -->
+								<i class="fa-solid fa-arrow-right"></i>
 								<!-- подключить потом через иконочный шрифт -->
-							</div>
+							</a>
 						</div>
 						<div class="hello__image">
 							<img src="./img/hello-img.png" alt="profile">
@@ -81,11 +82,6 @@
 								<button class="download__button">Скачать Сертификаты</button>
 								<i class="fa-light fa-arrow-down-to-square"></i>
 							</div> -->
-							<div class="about-me__download">
-								<button id="download" class="download__button">Связаться</button>
-								<img src="./img/Download.png" alt="" class="download__img">
-								<!-- подключить потом через иконочный шрифт -->
-							</div>
 						</div>
 					</div>
 				</div>
@@ -164,117 +160,55 @@
 			<section class="slider" id="slider">
 				<div class="slider__container">
 					<div class="slider__title">
-						<div class="title">Мои шко<span class="underline">льные</span> достижения</div>
+						<div class="title">Мои достиже<span class="underline">ния</span></div>
 						<!-- Мои успехи -->
 					</div>
 					<div class="slider__content">
 						<!-- ЕСЛИ ПОТОМ СЛАЙДЕР БУДЕТ ВНУТРИ ФЛЕКС ЭЛЕМЕНТА ИЛИ САМ УДЕТ ИМ ЯВЛЯТЬСЯ ТО НАДО БУДЕТ ДЛЯ
 						флекс элементов ЗАДАТЬ min-width: 0; иначе слайдер не будет работать -->
 						<div class="content__slide">
+							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
 							<div class="content__photo">
-								<img src="./img/for_slider/before_college/1.jpg" alt="" class="content__image">
+								<img data-lazy="./img/for_slider/colledge/1.jpg" alt="" class="content__image">
 							</div>
 						</div>
 						<div class="content__slide">
 							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
 							<div class="content__photo">
-								<img src="./img/for_slider/before_college/2.jpg" alt="" class="content__image">
+								<img data-lazy="./img/for_slider/colledge/2.jpg" alt="" class="content__image">
 							</div>
 						</div>
 						<div class="content__slide">
 							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
 							<div class="content__photo">
-								<img src="./img/for_slider/before_college/3.jpg" alt="" class="content__image">
+								<img data-lazy="./img/for_slider/colledge/3.jpg" alt="" class="content__image">
 							</div>
 						</div>
 						<div class="content__slide">
 							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
 							<div class="content__photo">
-								<img src="./img/for_slider/before_college/4.jpg" alt="" class="content__image">
+								<img data-lazy="./img/for_slider/colledge/4.jpg" alt="" class="content__image">
 							</div>
 						</div>
 						<div class="content__slide">
 							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
 							<div class="content__photo">
-								<img src="./img/for_slider/before_college/5.jpg" alt="" class="content__image">
+								<img data-lazy="./img/for_slider/colledge/5.PNG" alt="" class="content__image">
 							</div>
 						</div>
 						<div class="content__slide">
 							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
 							<div class="content__photo">
-								<img src="./img/for_slider/before_college/7.jpg" alt="" class="content__image">
+								<img data-lazy="./img/for_slider/colledge/6.jpg" alt="" class="content__image">
 							</div>
 						</div>
 						<div class="content__slide">
 							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
 							<div class="content__photo">
-								<img src="./img/for_slider/before_college/8.jpg" alt="" class="content__image">
+								<img data-lazy="./img/for_slider/colledge/7.PNG" alt="" class="content__image">
 							</div>
 						</div>
-						<div class="content__slide">
-							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-							<div class="content__photo">
-								<img src="./img/for_slider/before_college/9.jpg" alt="" class="content__image">
-							</div>
-						</div>
-						<div class="content__slide">
-							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-							<div class="content__photo">
-								<img src="./img/for_slider/before_college/10.jpg" alt="" class="content__image">
-							</div>
-						</div>
-						<div class="content__slide">
-							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-							<div class="content__photo">
-								<img src="./img/for_slider/before_college/11.jpg" alt="" class="content__image">
-							</div>
-						</div>
-						<div class="content__slide">
-							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-							<div class="content__photo">
-								<img src="./img/for_slider/before_college/12.jpg" alt="" class="content__image">
-							</div>
-						</div>
-					</div><!-- slider__content -->
-					<div class="slider__title-next">
-						<div class="title">Мои достижения в <span class="underline">колл</span>едже</div>
-					</div>
-					<div class="slider__content-next">
-						<div class="content-next__slide">
-							<div class="content-next__photo">
-								<img src="./img/for_slider/colledge/1.jpg" alt="" class="content-next__image">
-							</div>
-						</div>
-						<div class="content-next__slide">
-							<div class="content-next__photo">
-								<img src="./img/for_slider/colledge/2.jpg" alt="" class="content-next__image">
-							</div>
-						</div>
-						<div class="content-next__slide">
-							<div class="content-next__photo">
-								<img src="./img/for_slider/colledge/3.jpg" alt="" class="content-next__image">
-							</div>
-						</div>
-						<div class="content-next__slide">
-							<div class="content-next__photo">
-								<img src="./img/for_slider/colledge/4.jpg" alt="" class="content-next__image">
-							</div>
-						</div>
-						<div class="content-next__slide">
-							<div class="content-next__photo">
-								<img src="./img/for_slider/colledge/5.PNG" alt="" class="content-next__image">
-							</div>
-						</div>
-						<div class="content-next__slide">
-							<div class="content-next__photo">
-								<img src="./img/for_slider/colledge/6.jpg" alt="" class="content-next__image">
-							</div>
-						</div>
-						<div class="content-next__slide">
-							<div class="content-next__photo">
-								<img src="./img/for_slider/colledge/7.PNG" alt="" class="content-next__image">
-							</div>
-						</div>
+						
 					</div><!-- slider__content -->
 				</div><!-- slider__container -->
 			</section>

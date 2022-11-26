@@ -72,7 +72,7 @@
 	&__text {
 		flex-wrap: wrap;
 		// padding: 70px 0px 50px 0px;
-		margin: 70px 0px 50px 0px;
+		margin: 70px 0px 10px 0px;
 
 		font-family: $fs;
 		font-style: normal;
@@ -93,14 +93,15 @@
 		background-color: $ye-tx;
 		border-radius: 15px;
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
+		padding: 0px 60px;
 		align-items: center;
 		text-align: center;
 	}
 }
 .download {
 	&__button {
-		padding: 0px 0px 0px 30px;
+		// padding: 0px 0px 0px 30px;
 		background: none;
 		color: $bl;
 		font-family: $fs;
@@ -148,11 +149,18 @@
 	}
 	.about-me__text{
 		text-align: left;
+		// margin: 50px 10px;
 	}
 }
 
 
 /* mobile small*/
 @media (max-width: 565.98px){
-	
+	.about-me__download{
+		width: 250px;
+		padding: 0px 30px;
+	}
+	.about-me__text{
+		margin: 35px 0px 35px 0px;
+	}
 }

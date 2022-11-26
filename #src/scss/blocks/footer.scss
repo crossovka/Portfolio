@@ -40,9 +40,10 @@
 		.footer__copyrught{
 			min-height: 100%;
 		}
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		width: 100%;
-		min-height: 73px;
+
+		padding: 0px 0px 20px;
 		font-family: $fs;
 		font-weight: 700;
 		font-size: 1.33rem;
@@ -50,7 +51,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		text-align: center;
+		text-align: center;	
 		color: $wh-tx;
 	}
 	&__right-line{
@@ -105,7 +106,6 @@
 
 	&__email {
 		margin-left: 18px;
-		// width: 327px;
 		height: 57px;
 	}
 
@@ -124,7 +124,7 @@
 	}
 
 	&__text {
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		// height: 160px;
 		// width: 601px;
 		width: 100%;
@@ -200,8 +200,10 @@
 		&__message {
 		}
 }
+	.footer__get-in-touch{
+		padding-top: 20px;
+	}
 	.get-in-touch {
-
 		&__content {
 		}
 
@@ -223,6 +225,7 @@
 
 /* mobile */
 @media (max-width: 767.98px){
+	
 	.footer__content{
 		display: flex;
 		flex-direction: column;
@@ -242,6 +245,15 @@
 
 /* mobile small*/
 @media (max-width: 565.98px){
+	.footer__get-in-touch{
+
+	}
+	.footer__title{
+		text-align: center;
+	}
+	.footer__content{
+		margin: 112px 0px 40px;
+	}
 	.footer__created{
 		font-size: 0.7rem;
 	}

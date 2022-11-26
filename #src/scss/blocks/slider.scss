@@ -9,6 +9,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
 	}
 	&__content {
 	}
@@ -48,26 +49,31 @@
 		height: auto;
 	}
 }
-.content-next {
 
-	&__slide {
-	}
 
-	&__photo {
-		height: 800px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
+/* PC */
+@media (max-width: 1306px){
 
-	&__image {
-		padding: 40px;
-		display: block;
-		width: 100%;
-		height: auto;
+}
+
+/* планшет - tablet */
+@media (max-width: 991.98px){
+	.slider {
+		padding: 150px 0px 75px;
 	}
 }
+
+/* mobile */
+@media (max-width: 767.98px){
+
+}
+
+
+/* mobile small*/
+@media (max-width: 565.98px){
+
+}
+
 
 // я не стал подключать слайдер ссылкой и скачал архив. не стал в итоге удалять файлы css в комплекте и не пришлось верстать его с нуля 
 // снизу те же клссы если перезаписывать их поверх исходных с архива или сверстать с нуля самому
