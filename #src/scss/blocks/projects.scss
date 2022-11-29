@@ -92,15 +92,15 @@
 	}
 
 	&__title {
-		// margin: 20px 18px;
-		margin: 10px 0px 20px 18px;
+		padding: 20px 0px 20px 18px;
 
 		text-transform: uppercase;
 		font-family: $fs;
 		font-weight: 700;
-		font-size: 1.66rem;
-		line-height: 40px;
-		color: $wh-tx;
+		font-size: 1.3rem;
+		line-height: 25px;
+		// color: $wh-tx;
+		color: $ye-tx;
 	}
 }
 
@@ -110,7 +110,7 @@
 @media (max-width: 991.98px){
 	.works__title{
 		font-size: 1rem;
-		margin: 6px 0px 6px 15px;
+		padding: 5px 0px 5px 14px;
 		text-transform: capitalize;
 	}
 	// .portfolio__col{
@@ -135,5 +135,12 @@
 @media (max-width: 565.98px){
 	.portfolio__col{
 		flex-basis: 100%;
+	}
+	.works__title{
+		// background-color: rgba(255, 0, 0, 0.09);
+		text-transform: uppercase;
+		font-size: 1.3rem;
+		// margin: 5px 0px 3px 8px;
+		margin: 6px 0px 6px 0px;
 	}
 }

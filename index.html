@@ -1,113 +1,137 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
-	<script src="https://kit.fontawesome.com/3496d95267.js" crossorigin="anonymous"></script>
-	<!-- иконочный шрифт.через moonfonts для создания своего шрифта вылезает ошибка с отображением svg надо будет их перерисовать для замкнутого контура -->
-	<link rel="stylesheet" href="./styles/main.css">
-	<!-- сжатый препроцесором файл -->
-</head>
-<body>
-	<div class="wpapper">
-		<header class="header">
-			<div class="header__container">
-				<div class="header__inner">
-					<a href="#" class="header__logo">
-						<img src="./img/logo.svg" alt="logo">
-						<!-- мб сделать лого черезщ текст и span и спан юзать повторно -->
-					</a>
-					<div class="header__burger">
-						<span></span>
-					</div>
-					<nav class="header__menu">
-						<ul class="menu__list">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<script
+			src="https://kit.fontawesome.com/3496d95267.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- иконочный шрифт.через moonfonts для создания своего шрифта вылезает ошибка с отображением svg надо будет их перерисовать для замкнутого контура -->
+		<link rel="stylesheet" href="./styles/main.css" />
+		<!-- сжатый препроцесором файл -->
+	</head>
+	<body>
+		<div class="wpapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__inner">
+						<a href="#" class="header__logo">
+							<img src="./img/logo.svg" alt="logo" />
+							<!-- мб сделать лого черезщ текст и span и спан юзать повторно -->
+						</a>
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<nav class="header__menu">
+							<ul class="menu__list">
 								<li><a href="#about-me" class="menu__link">Обо мне</a></li>
 								<li><a href="#skills" class="menu__link">Навыки</a></li>
 								<li><a href="#projects" class="menu__link">проекты</a></li>
 								<li><a href="#slider" class="menu__link">Достижения</a></li>
-								<li><a href="#footer" class="menu__link"><span class="yellow-text">Связаться</span></a></li>
-						</ul>
-					</nav>
-					<!-- <div class="header__burger">
+								<li>
+									<a href="#footer" class="menu__link"
+										><span class="yellow-text">Связаться</span></a
+									>
+								</li>
+							</ul>
+						</nav>
+						<!-- <div class="header__burger">
 						<span></span>
 					</div> -->
+					</div>
 				</div>
-			</div>
-		</header>
+			</header>
 
-		<main class="main">
-			<!-- валидатор ругается если сектион без заголовка. делаешь section-тогда и заголовок	 	 -->
-			<section class="hello" id="hello">
-				<div class="hello__container">
-					<div class="hello__inner">
-						<div class="hello__content">
-							<div class="hello__subtitle">Привет,<span class="yellow-text">Я</span></div>
-							<h1 class="hello__title">Вячеслав</h1>
-							<h1 class="hello__title next">Чекасин</h1>
-							<a href="#footer" class="button" style="color: #fff;">
-								<button id="contact" class="button__contacnt">Связаться</button>
-								<!-- <img src="./img/Right-Arrow.svg" alt="" class="button__right-arrow"> -->
-								<i class="fa-solid fa-arrow-right"></i>
-								<!-- подключить потом через иконочный шрифт -->
-							</a>
-						</div>
-						<div class="hello__image">
-							<img src="./img/hello-img.png" alt="profile">
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="about-me" id="about-me">
-				<div class="about-me__container">
-					<div class="about-me__title">
-						<div class="title"><span class="underline">Об</span>о мне</div>
-					</div>
-					<div class="about-me__content">
-						<div class="about-me__picture">
-							<div class="about-me__border">
-								<img src="./img/slavick.png" alt="my photo" class="about-me__iamge">
+			<main class="main">
+				<!-- валидатор ругается если сектион без заголовка. делаешь section-тогда и заголовок	 	 -->
+				<section class="hello" id="hello">
+					<div class="hello__container">
+						<div class="hello__inner">
+							<div class="hello__content">
+								<div class="hello__subtitle">
+									Привет,<span class="yellow-text">Я</span>
+								</div>
+								<h1 class="hello__title">Вячеслав</h1>
+								<h1 class="hello__title next">Чекасин</h1>
+								<a href="#footer" class="button" style="color: #fff">
+									<button id="contact" class="button__contacnt">
+										Связаться
+									</button>
+									<!-- <img src="./img/Right-Arrow.svg" alt="" class="button__right-arrow"> -->
+									<i class="fa-solid fa-arrow-right"></i>
+									<!-- подключить потом через иконочный шрифт -->
+								</a>
+							</div>
+							<div class="hello__image">
+								<img src="./img/hello-img.png" alt="profile" />
 							</div>
 						</div>
-						<div class="about-me__who-i-am">
-							<div class="subtitle">Кто я такой?</div>
-							<div class="about-me__text">
-								Меня зовут Слава, родился в Серове (Свердловская область). Хорошо закончил 9 классов, 
-								ходил в различные спортивные кружки, занимался робототеникой. <br> Очень люблю путешествовать, проехал
-								страну от Санкт-Петирбурга до Владивостока. Учусь В ГПОАУ ОА АПК, чтобы стать востребованым специалистом :)
+					</div>
+				</section>
+				<section class="about-me" id="about-me">
+					<div class="about-me__container">
+						<div class="about-me__title">
+							<div class="title"><span class="underline">Об</span>о мне</div>
+						</div>
+						<div class="about-me__content">
+							<div class="about-me__picture">
+								<div class="about-me__border">
+									<img
+										src="./img/slavick.png"
+										alt="my photo"
+										class="about-me__iamge"
+									/>
+								</div>
 							</div>
-							<!-- <div class="about-me__download">
+							<div class="about-me__who-i-am">
+								<div class="subtitle">Кто я такой?</div>
+								<div class="about-me__text">
+									Меня зовут Слава, родился в Серове (Свердловская область).
+									Хорошо закончил 9 классов, ходил в различные спортивные
+									кружки, занимался робототеникой. <br />
+									Очень люблю путешествовать, проехал страну от Санкт-Петирбурга
+									до Владивостока. Учусь В ГПОАУ ОА АПК, чтобы стать
+									востребованым специалистом :)
+								</div>
+								<!-- <div class="about-me__download">
 								<button class="download__button">Скачать Сертификаты</button>
 								<i class="fa-light fa-arrow-down-to-square"></i>
 							</div> -->
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="skils" id="skills">
-				<div class="skils__container">
-					<div class="skils__title">
-						<div class="title">Мои н<span class="underline">авы</span>ки</div>
-					</div>
-					<div class="skils__content">
-						<div class="skils__expirience">
-							<div class="skils__subtitle">
-								<div class="subtitle__con">Мои творческие<span class="yellow-text">навыки  и опыт</span></div>
-							</div>
-							<div class="expirience__text">
-								<!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				</section>
+				<section class="skils" id="skills">
+					<div class="skils__container">
+						<div class="skils__title">
+							<div class="title">Мои н<span class="underline">авы</span>ки</div>
+						</div>
+						<div class="skils__content">
+							<div class="skils__expirience">
+								<div class="skils__subtitle">
+									<div class="subtitle__con">
+										Мои творческие<span class="yellow-text">навыки и опыт</span>
+									</div>
+								</div>
+								<div class="expirience__text">
+									<!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 								Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi.
 								Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum.
 								Ad delectus natus aut hic explicabo minus quod. -->
-								Помимо обучения в любимом колледже я также стараюсь и обучаться сам в свобоное время. Мне очень интересна область веб-разработки.
-								<br><br>
-								За это время я освоил основы работы с Figma и препроцессором SCSS для верстки. На уверенном уровне владею HTML, CSS, изучаю Java Script и
-								адаптивную верстку, планирую освоить Gulp и Webpack.
+									Помимо обучения в любимом колледже я также стараюсь и
+									обучаться сам в свобоное время. Мне очень интересна область
+									веб-разработки.
+									<br /><br />
+									За это время я освоил основы работы с Figma и препроцессором
+									SCSS для верстки. На уверенном уровне владею HTML, CSS, изучаю
+									Java Script и адаптивную верстку, планирую освоить Gulp и
+									Webpack.
+								</div>
 							</div>
-						</div>
-						<!-- <div class="skils__blocks">
+							<!-- <div class="skils__blocks">
 							если будут проблемы с адаптивом потом то просто переделать не 
 							на два row а на 2 coll или вообще их убрать и оставить только ячейки с wrap как в projects.block
 							<div class="blocks__row">
@@ -121,244 +145,313 @@
 								<div class="blocks__item"><div class="blocks__subtitle">JS</div><i class="fa-brands fa-js"></i></div>
 							</div>
 						</div> -->
-						<div class="skils__blocks">
-							<div class="blocks__cont">
-								<div class="blocks__coll">
-									<div class="blocks__item"><div class="blocks__subtitle">HTML</div><i class="fa-brands fa-html5"></i></div>
-								</div>
-								<div class="blocks__coll">
-									<div class="blocks__item"><div class="blocks__subtitle">CSS</div><i class="fa-brands fa-css3-alt"></i></div>
-								</div>
-								<div class="blocks__coll">
-									<div class="blocks__item"><div class="blocks__subtitle">FIGMA</div><i class="fa-brands fa-figma"></i></div>
-								</div>
-								<div class="blocks__coll">
-									<div class="blocks__item"><div class="blocks__subtitle">SCSS</div><i class="fa-brands fa-sass"></i></div>
-								</div>
-								<div class="blocks__coll">
-									<div class="blocks__item"><div class="blocks__subtitle">Python</div><i class="fa-brands fa-python"></i></div>
-								</div>
-								<div class="blocks__coll">
-									<div class="blocks__item"><div class="blocks__subtitle">JS</div><i class="fa-brands fa-js"></i></div>
+							<div class="skils__blocks">
+								<div class="blocks__cont">
+									<div class="blocks__coll">
+										<div class="blocks__item">
+											<div class="blocks__subtitle">HTML</div>
+											<i class="fa-brands fa-html5"></i>
+										</div>
+									</div>
+									<div class="blocks__coll">
+										<div class="blocks__item">
+											<div class="blocks__subtitle">CSS</div>
+											<i class="fa-brands fa-css3-alt"></i>
+										</div>
+									</div>
+									<div class="blocks__coll">
+										<div class="blocks__item">
+											<div class="blocks__subtitle">FIGMA</div>
+											<i class="fa-brands fa-figma"></i>
+										</div>
+									</div>
+									<div class="blocks__coll">
+										<div class="blocks__item">
+											<div class="blocks__subtitle">SCSS</div>
+											<i class="fa-brands fa-sass"></i>
+										</div>
+									</div>
+									<div class="blocks__coll">
+										<div class="blocks__item">
+											<div class="blocks__subtitle">Python</div>
+											<i class="fa-brands fa-python"></i>
+										</div>
+									</div>
+									<div class="blocks__coll">
+										<div class="blocks__item">
+											<div class="blocks__subtitle">JS</div>
+											<i class="fa-brands fa-js"></i>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<sectin class="projects" id="projects">
-				<div class="projects__container">
-					<div class="projects__title">
-						<div class="title">П<span class="underline">рое</span>кты</div>
+				<sectin class="projects" id="projects">
+					<div class="projects__container">
+						<div class="projects__title">
+							<div class="title">П<span class="underline">рое</span>кты</div>
+						</div>
+						<div class="projects__portfolio"></div>
+						<!--portfolio -->
 					</div>
-					<div class="projects__portfolio">
-					</div><!--portfolio -->
-				</div><!-- container -->
-			</sectin>
+					<!-- container -->
+				</sectin>
 
-			<section class="slider" id="slider">
-				<div class="slider__container">
-					<div class="slider__title">
-						<div class="title">Мои достиже<span class="underline">ния</span></div>
-						<!-- Мои успехи -->
-					</div>
-					<div class="slider__content">
-						<!-- ЕСЛИ ПОТОМ СЛАЙДЕР БУДЕТ ВНУТРИ ФЛЕКС ЭЛЕМЕНТА ИЛИ САМ УДЕТ ИМ ЯВЛЯТЬСЯ ТО НАДО БУДЕТ ДЛЯ
+				<section class="slider" id="slider">
+					<div class="slider__container">
+						<div class="slider__title">
+							<div class="title">
+								Мои достиже<span class="underline">ния</span>
+							</div>
+							<!-- Мои успехи -->
+						</div>
+						<div class="slider__content">
+							<!-- ЕСЛИ ПОТОМ СЛАЙДЕР БУДЕТ ВНУТРИ ФЛЕКС ЭЛЕМЕНТА ИЛИ САМ УДЕТ ИМ ЯВЛЯТЬСЯ ТО НАДО БУДЕТ ДЛЯ
 						флекс элементов ЗАДАТЬ min-width: 0; иначе слайдер не будет работать -->
-						<div class="content__slide">
-							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-							<div class="content__photo">
-								<img data-lazy="./img/for_slider/colledge/1.jpg" alt="" class="content__image">
-							</div>
-						</div>
-						<div class="content__slide">
-							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-							<div class="content__photo">
-								<img data-lazy="./img/for_slider/colledge/2.jpg" alt="" class="content__image">
-							</div>
-						</div>
-						<div class="content__slide">
-							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-							<div class="content__photo">
-								<img data-lazy="./img/for_slider/colledge/3.jpg" alt="" class="content__image">
-							</div>
-						</div>
-						<div class="content__slide">
-							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-							<div class="content__photo">
-								<img data-lazy="./img/for_slider/colledge/4.jpg" alt="" class="content__image">
-							</div>
-						</div>
-						<div class="content__slide">
-							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-							<div class="content__photo">
-								<img data-lazy="./img/for_slider/colledge/5.PNG" alt="" class="content__image">
-							</div>
-						</div>
-						<div class="content__slide">
-							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-							<div class="content__photo">
-								<img data-lazy="./img/for_slider/colledge/6.jpg" alt="" class="content__image">
-							</div>
-						</div>
-						<div class="content__slide">
-							<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-							<div class="content__photo">
-								<img data-lazy="./img/for_slider/colledge/7.PNG" alt="" class="content__image">
-							</div>
-						</div>
-						
-					</div><!-- slider__content -->
-				</div><!-- slider__container -->
-			</section>
-		</main>
-
-		<footer class="footer" id="footer">
-			<div class="footer__container">
-				<div class="footer__title">
-					<div class="title">связат<span class="underline">ься</span> со мной</div>
-				</div>
-				<div class="footer__content">
-					<div class="footer__contact">
-						<div class="form">
-							<form action="#">
-								<div class="subtitle">Написать Мне</div>
-								<!-- повторное -->
-								<div class="form__row">
-									<div class="form__item form__name">
-										<input id="name" type="text" placeholder="Имя*"> 
-									</div>
-									<div class="form__item form__email">
-										<input id="email" type="email" placeholder="Email*"> 
-									</div>
+							<div class="content__slide">
+								<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
+								<div class="content__photo">
+									<img
+										data-lazy="./img/for_slider/colledge/1.jpg"
+										alt=""
+										class="content__image"
+									/>
 								</div>
+							</div>
+							<div class="content__slide">
+								<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
+								<div class="content__photo">
+									<img
+										data-lazy="./img/for_slider/colledge/2.jpg"
+										alt=""
+										class="content__image"
+									/>
+								</div>
+							</div>
+							<div class="content__slide">
+								<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
+								<div class="content__photo">
+									<img
+										data-lazy="./img/for_slider/colledge/3.jpg"
+										alt=""
+										class="content__image"
+									/>
+								</div>
+							</div>
+							<div class="content__slide">
+								<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
+								<div class="content__photo">
+									<img
+										data-lazy="./img/for_slider/colledge/4.jpg"
+										alt=""
+										class="content__image"
+									/>
+								</div>
+							</div>
+							<div class="content__slide">
+								<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
+								<div class="content__photo">
+									<img
+										data-lazy="./img/for_slider/colledge/5.PNG"
+										alt=""
+										class="content__image"
+									/>
+								</div>
+							</div>
+							<div class="content__slide">
+								<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
+								<div class="content__photo">
+									<img
+										data-lazy="./img/for_slider/colledge/6.jpg"
+										alt=""
+										class="content__image"
+									/>
+								</div>
+							</div>
+							<div class="content__slide">
+								<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
+								<div class="content__photo">
+									<img
+										data-lazy="./img/for_slider/colledge/7.PNG"
+										alt=""
+										class="content__image"
+									/>
+								</div>
+							</div>
+						</div>
+						<!-- slider__content -->
+					</div>
+					<!-- slider__container -->
+				</section>
+			</main>
+
+			<footer class="footer" id="footer">
+				<div class="footer__container">
+					<div class="footer__title">
+						<div class="title">
+							связат<span class="underline">ься</span> со мной
+						</div>
+					</div>
+					<div class="footer__content">
+						<div class="footer__contact">
+							<div class="form">
+								<form action="#">
+									<div class="subtitle">Написать Мне</div>
+									<!-- повторное -->
+									<div class="form__row">
+										<div class="form__item form__name">
+											<input id="name" type="text" placeholder="Имя*" />
+										</div>
+										<div class="form__item form__email">
+											<input id="email" type="email" placeholder="Email*" />
+										</div>
+									</div>
 									<div class="form__item form__theme">
-										<input id="email" type="text" placeholder="Тема"> 
+										<input id="email" type="text" placeholder="Тема" />
 									</div>
 									<div class="form__item form__message">
-										<textarea type="text" id="text" placeholder="Ваше сообщение" rows="2" cols="15"></textarea>
+										<textarea
+											type="text"
+											id="text"
+											placeholder="Ваше сообщение"
+											rows="2"
+											cols="15"
+										></textarea>
 									</div>
 									<div class="button">
-										<button id="contact" class="button__contacnt">отправить</button>
-										<img src="./img/Right-Arrow.svg" alt="" class="button__right-arrow">
+										<button id="contact" class="button__contacnt">
+											отправить
+										</button>
+										<img
+											src="./img/Right-Arrow.svg"
+											alt=""
+											class="button__right-arrow"
+										/>
 										<!-- иконочный шрифт потом -->
 									</div>
-							</form>
+								</form>
+							</div>
 						</div>
-					</div>
-					<div class="footer__get-in-touch">
-						<div class="subtitle">Связаться</div>
-						<div class="get-in-touch__content">
-							<div class="get-in-touch__text">
-								Если вас что-то интересует, то вы можете обратиться ко мне по поводу вопросов в любое время следующим образом:
-							</div> 
-							<div class="get-in-touch__info">
-								<div class="get-in-touch__row">
-									<div class="get-in-touch__about">
-										<i class="fa-solid fa-phone"></i>
-										<div class="get-in-touch__ue">+7 996-384-65 03</div>
-									</div>
-									<div class="get-in-touch__about">
-										<i class="fa-brands fa-whatsapp"></i>
-										<div class="get-in-touch__ue">Whatsapp</div>
-									</div>
-									<div class="get-in-touch__about">
-										<i class="fa-brands fa-telegram"></i>
-										<div class="get-in-touch__ue">Telegramm</div>
-									</div>
-									<div class="get-in-touch__about">
-										<i class="fa-brands fa-discord"></i>
-										<div class="get-in-touch__ue">Cr0ss0vka#8818</div>
+						<div class="footer__get-in-touch">
+							<div class="subtitle">Связаться</div>
+							<div class="get-in-touch__content">
+								<div class="get-in-touch__text">
+									Если вас что-то интересует, то вы можете обратиться ко мне по
+									поводу вопросов в любое время следующим образом:
+								</div>
+								<div class="get-in-touch__info">
+									<div class="get-in-touch__row">
+										<div class="get-in-touch__about">
+											<i class="fa-solid fa-phone"></i>
+											<div class="get-in-touch__ue">+7 996-384-65 03</div>
+										</div>
+										<div class="get-in-touch__about">
+											<i class="fa-brands fa-whatsapp"></i>
+											<div class="get-in-touch__ue">Whatsapp</div>
+										</div>
+										<div class="get-in-touch__about">
+											<i class="fa-brands fa-telegram"></i>
+											<div class="get-in-touch__ue">Telegramm</div>
+										</div>
+										<div class="get-in-touch__about">
+											<i class="fa-brands fa-discord"></i>
+											<div class="get-in-touch__ue">Cr0ss0vka#8818</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="footer__created">
-					<div class="footer__created-by">
-						<span class="footer__right-line">Создано <span class="yellow-text">Славой</span></span>
-					</div>
-					<div class="footer__copyrught">
-						<i class="fa-regular fa-copyright"></i>
-						Все права защищены
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<!-- <div style="margin-bottom: 100px"></div> -->
-	</div>
-
-	<!-- модальные окна  -->
-	
-<div class="modal" id="project_universal">
-	<div class="modal__dialog">
-		<button type="button" class="modal__close" data-close></button>
-
-		<div class="modal__projects">
-			<div class="projects__preview">
-				<div class="preview__item">
-					<div class="preview__image">
-						<img src="./img/slavick.png" alt="" class="preview__img">
+					<div class="footer__created">
+						<div class="footer__created-by">
+							<span class="footer__right-line"
+								>Создано <span class="yellow-text">Славой</span></span
+							>
+						</div>
+						<div class="footer__copyrught">
+							<i class="fa-regular fa-copyright"></i>
+							Все права защищены
+						</div>
 					</div>
 				</div>
-			</div>	<!-- projects__slider -->
-			<div class="projects__content">
-				<div class="content__title">
-					<div class="title">заго<span class="underline">лов</span>ок</div>
-				</div>
-				<div class="content__text">
-					В частности, выбранный нами инновационный путь играет определяющее значение для переосмысления внешнеэкономических политик. 
-					С другой стороны, разбавленное изрядной долей эмпатии, 
-					рациональное мышление создаёт необходимость включения в производственный план целого ряда внеочередных 
-				
-				</div>
+			</footer>
 
-				<div class="content__footer">
-					<div class="footer__left">
-						<i class="fa-solid fa-chevron-left"></i>
-						<button class="footer__btn footer__btn--past">Назад</button>
+			<!-- <div style="margin-bottom: 100px"></div> -->
+		</div>
+
+		<!-- модальные окна  -->
+
+		<div class="modal" id="project_universal">
+			<div class="modal__dialog">
+				<button type="button" class="modal__close" data-close></button>
+
+				<div class="modal__projects">
+					<div class="projects__preview">
+						<div class="preview__item">
+							<div class="preview__image">
+								<img src="./img/slavick.png" alt="" class="preview__img" />
+							</div>
+						</div>
 					</div>
-					<div class="footer__right">
-						<button class="footer__btn footer__btn--next">Вперёд</button>
-						<i class="fa-solid fa-chevron-right"></i>
+					<!-- projects__slider -->
+					<div class="projects__content">
+						<div class="content__title">
+							<div class="title">заго<span class="underline">лов</span>ок</div>
+						</div>
+						<div class="content__text">
+							В частности, выбранный нами инновационный путь играет определяющее
+							значение для переосмысления внешнеэкономических политик. С другой
+							стороны, разбавленное изрядной долей эмпатии, рациональное
+							мышление создаёт необходимость включения в производственный план
+							целого ряда внеочередных
+						</div>
+
+						<div class="content__footer">
+							<div class="footer__left">
+								<i class="fa-solid fa-chevron-left"></i>
+								<button class="footer__btn footer__btn--past">Назад</button>
+							</div>
+							<div class="footer__right">
+								<button class="footer__btn footer__btn--next">Вперёд</button>
+								<i class="fa-solid fa-chevron-right"></i>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-	</div>
-</div>
+		<!-- Подключение слайдера  -->
+		<!-- джэйквери можно поключить просто ссылкой но боюсь что может полететь когда-нибудь и так иконочные шрифты нагружают. скачал компресированный файл. -->
+		<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
 
-			<!-- Подключение слайдера  -->
-	<!-- джэйквери можно поключить просто ссылкой но боюсь что может полететь когда-нибудь и так иконочные шрифты нагружают. скачал компресированный файл. -->
-	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+		<!-- бургер меню -->
+		<script src="./scripts/burger__menu.js"></script>
 
-	<!-- бургер меню -->
-	<script src="./scripts/burger__menu.js"></script>
+		<!-- якоря по сайту -->
+		<script src="./scripts/yakor.js"></script>
 
-	<!-- якоря по сайту -->
-	<script src="./scripts/yakor.js"></script>
+		<!-- модальные окна -->
+		<script src="./scripts/modal_logic.js"></script>
+		<script src="./scripts/modals.js"></script>
+		<script src="./scripts/modal_slider.js"></script>
 
-	<!-- модальные окна -->
-	<script src="./scripts/modal_logic.js"></script>
-	<script src="./scripts/modals.js"></script>
-	<script src="./scripts/modal_slider.js"></script>
+		<!-- можео убрать в приницпе все файлы в слиее кроме мин.джс навязываю мне свои стили могу  сам сверсать -->
+		<link rel="stylesheet" href="./libs/slick/slick.css" />
+		<link rel="stylesheet" href="./libs/slick/slick-theme.css" />
+		<!-- можео убрать в приницпе все файлы в слиее кроме мин.джс навязываю мне свои стили могу  сам сверсать -->
+		<script src="./libs/slick/slick.min.js"></script>
+		<!-- Подключение слайдера  -->
+		<script src="./scripts/slider.js"></script>
+		<!-- работа со сликом и  джейквери -->
 
-
-	<!-- можео убрать в приницпе все файлы в слиее кроме мин.джс навязываю мне свои стили могу  сам сверсать -->
-	<link rel="stylesheet" href="./libs/slick/slick.css">
-	<link rel="stylesheet" href="./libs/slick/slick-theme.css">
-	<!-- можео убрать в приницпе все файлы в слиее кроме мин.джс навязываю мне свои стили могу  сам сверсать -->
-	<script src="./libs/slick/slick.min.js"></script>
-			<!-- Подключение слайдера  -->
-	<script src="./scripts/slider.js"></script>
-	<!-- работа со сликом и  джейквери -->
-
-
-	<link rel="stylesheet" href="./libs/slick_for_modal/slick-modal.css">
-	<link rel="stylesheet" href="./libs/slick_for_modal/slick-theme-modal.css">
-</body>
+		<link rel="stylesheet" href="./libs/slick_for_modal/slick-modal.css" />
+		<link
+			rel="stylesheet"
+			href="./libs/slick_for_modal/slick-theme-modal.css"
+		/>
+	</body>
 </html>
