@@ -626,7 +626,7 @@ body.lock {
   }
 }
 .hello {
-  background-image: url(../background.png);
+  background-image: url(../img/backgound.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 400px 0px 132px 0px;
