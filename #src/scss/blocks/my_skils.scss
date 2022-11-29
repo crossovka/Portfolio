@@ -120,7 +120,6 @@
 
 	&__expirience {
 		flex: 0 1 55%;
-		margin-right: 30px;
 
 		position: relative;
 		// субтайтл позиционируется относительно этого блока КОСТЫЛИ
@@ -129,9 +128,9 @@
 	&__subtitle {
 		max-height: 80px;
 		width: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
+		// position: absolute;
+		// top: 0;
+		// left: 0;
 		span{
 			padding: 0px 0px 0px 9px;
 		}
@@ -229,6 +228,9 @@
 		i{
 			font-size: 5rem;
 		}
+	}
+	.expirience__text{
+		margin: 60px 0px 50px;
 	}
 }
 /* mobile small*/
