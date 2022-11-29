@@ -626,7 +626,7 @@ body.lock {
   }
 }
 .hello {
-  background-image: url(../../../img/hello-backgound.png);
+  background-image: url(../img/hello-backgound.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 400px 0px 132px 0px;
@@ -1356,7 +1356,7 @@ body.lock {
   height: 60px;
   border-radius: 50%;
   background: transparent;
-  background-image: url(/img/3388569.png);
+  background-image: url(../img/3388569.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;

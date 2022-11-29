@@ -45,3 +45,15 @@ projects.addModal(
 	'./img/projects_prev/7.PNG',
 	'./img/project_modal/7.PNG'
 );
+projects.addModal(
+	'Интерактивный сайт',
+	`разрабатывал `,
+	'./img/projects_prev/8.PNG',
+	'./img/project_modal/8.PNG'
+);
+projects.addModal(
+	'Интерактивная карта',
+	` `,
+	'./img/projects_prev/9.png',
+	'./img/project_modal/8.PNG'
+);
