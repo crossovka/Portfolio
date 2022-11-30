@@ -54,6 +54,15 @@ $bl: #000000;
 		width: 27px;
 		height: 27px;
 	}
+	transition: border 0.3s ease 0s;
+	&:hover{
+		border: 2px solid #f6ff00;
+	}
+	position: relative;
+	top: 0;
+	&:active{
+		top: 3px;
+	}
 }
 
 .underline{

@@ -14,7 +14,7 @@ $(document).ready(function () {
 		pauseOnHover: true,
 		// автоплей
 		autoplay: true,
-		autoplaySpeed: 1700,
+		autoplaySpeed: 2700,
 		// автоплей
 		// точки
 		dots: true,
@@ -62,7 +62,7 @@ $(document).ready(function () {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					speed: 900,
-					autoplaySpeed: 1800,
+					autoplaySpeed: 1000,
 					easing: true,
 				},
 			},

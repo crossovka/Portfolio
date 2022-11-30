@@ -46,14 +46,14 @@ projects.addModal(
 	'./img/project_modal/7.PNG'
 );
 projects.addModal(
-	'Интерактивный сайт',
+	'Верстка лендинга',
 	`разрабатывал `,
 	'./img/projects_prev/8.PNG',
 	'./img/project_modal/8.PNG'
 );
 projects.addModal(
 	'Интерактивная карта',
-	` `,
+	`этот проект будет нести практическую пользу не только мне, но и моим согильдейцам в моей любимой игре`,
 	'./img/projects_prev/9.png',
-	'./img/project_modal/8.PNG'
+	'./img/project_modal/9.PNG'
 );

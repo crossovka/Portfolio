@@ -124,7 +124,14 @@
 		padding: 20px;
 	}
 	.projects__preview{
-		display: none;
+		width: 100%;
+	}
+	.modal__projects{
+		display: flex;
+		flex-direction: column;
+	}
+	.projects__preview{
+		// display: none;
 	}
 	.projects__content{
 		width: 100%;

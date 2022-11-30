@@ -175,6 +175,10 @@ h6 {
           flex-direction: row;
   border-radius: 15px;
   border: 1px solid #F4FA1A;
+  -webkit-transition: border 0.3s ease 0s;
+  transition: border 0.3s ease 0s;
+  position: relative;
+  top: 0;
 }
 .button__contacnt {
   background: none;
@@ -187,6 +191,12 @@ h6 {
 .button__right-arrow {
   width: 27px;
   height: 27px;
+}
+.button:hover {
+  border: 2px solid #f6ff00;
+}
+.button:active {
+  top: 3px;
 }
 
 .underline {
@@ -1487,7 +1497,16 @@ body.lock {
     padding: 20px;
   }
   .projects__preview {
-    display: none;
+    width: 100%;
+  }
+  .modal__projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .projects__content {
     width: 100%;
