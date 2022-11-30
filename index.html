@@ -314,38 +314,28 @@
 					<div class="footer__content">
 						<div class="footer__contact">
 							<div class="form">
-								<form action="#">
+								<form action="#" id="form">
 									<div class="subtitle">Написать Мне</div>
 									<!-- повторное -->
 									<div class="form__row">
 										<div class="form__item form__name">
-											<input id="name" type="text" placeholder="Имя*" />
+											<input class="_req" id="name" type="text" placeholder="Имя*" />
 										</div>
 										<div class="form__item form__email">
-											<input id="email" type="email" placeholder="Email*" />
+											<input class="_req _email" id="email" type="email" placeholder="Email*" />
 										</div>
 									</div>
 									<div class="form__item form__theme">
-										<input id="email" type="text" placeholder="Тема" />
+										<input class="_req" id="email" type="text" placeholder="Тема*" />
 									</div>
 									<div class="form__item form__message">
-										<textarea
-											type="text"
-											id="text"
-											placeholder="Ваше сообщение"
-											rows="2"
-											cols="15"
-										></textarea>
+										<textarea type="text" id="text" placeholder="Ваше сообщение" rows="2" cols="15"></textarea>
 									</div>
 									<div class="button">
 										<button id="contact" class="button__contacnt">
 											отправить
 										</button>
-										<img
-											src="./img/Right-Arrow.svg"
-											alt=""
-											class="button__right-arrow"
-										/>
+										<img src="./img/Right-Arrow.svg" alt="" class="button__right-arrow"/>
 										<!-- иконочный шрифт потом -->
 									</div>
 								</form>
@@ -465,9 +455,9 @@
 		<!-- работа со сликом и  джейквери -->
 
 		<link rel="stylesheet" href="./libs/slick_for_modal/slick-modal.css" />
-		<link
-			rel="stylesheet"
-			href="./libs/slick_for_modal/slick-theme-modal.css"
-		/>
+		<link rel="stylesheet" href="./libs/slick_for_modal/slick-theme-modal.css" />
+
+		<!-- форма связаться -->
+		<script src="./scripts/form.js"></script>
 	</body>
 </html>

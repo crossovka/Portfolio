@@ -42,9 +42,11 @@ projects.addModal(
 projects.addModal(
 	'Анимация загрузки на сайте',
 	`Красивая анимация загрузки на сайте, которую я планирую использовать дальнейшем в своих проетах. Реализовано это при помощи Java script
-	и @keyframes в CSS`,
+	и @keyframes в CSS
+	посмотреть сайт: https://crossovka.github.io/loading/`,
 	'./img/projects_prev/5.gif',
 	'./img/project_modal/5.PNG'
+	// https://crossovka.github.io/loading/
 );
 projects.addModal(
 	'Игра на unity',
