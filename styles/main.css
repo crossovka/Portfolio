@@ -457,7 +457,7 @@ body.lock {
   border-right: 3px solid #FFFFFF;
 }
 
-.form__item:focus {
+.form__item > input:focus {
   -webkit-box-shadow: 0 0 15px #e3e556;
           box-shadow: 0 0 15px #e3e556;
 }
@@ -465,6 +465,7 @@ body.lock {
 .form__item._error {
   -webkit-box-shadow: 0 0 15px #dd6c4a;
           box-shadow: 0 0 15px #dd6c4a;
+  border-radius: 10px;
 }
 
 .form {
