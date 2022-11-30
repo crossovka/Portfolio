@@ -70,6 +70,11 @@
 		line-height: 2.6;
 		letter-spacing: 0.1em;
 		color: $wh-tx;
+
+		transition: border 0.3s linear;
+		&:hover{
+			border-bottom: 2px solid #F4FA1A;
+		}
 	}
 }
 .header__menu{

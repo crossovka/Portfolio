@@ -267,6 +267,11 @@ h6 {
   line-height: 2.6;
   letter-spacing: 0.1em;
   color: #FFFFFF;
+  -webkit-transition: border 0.3s linear;
+  transition: border 0.3s linear;
+}
+.menu__link:hover {
+  border-bottom: 2px solid #F4FA1A;
 }
 
 .header__menu {
@@ -1526,6 +1531,9 @@ body.lock {
     font-size: 0.8rem;
     line-height: 26px;
     letter-spacing: 0em;
+  }
+  .content__title > .title {
+    line-height: 44px;
   }
 }
 /*  ---------------------------------------  */
