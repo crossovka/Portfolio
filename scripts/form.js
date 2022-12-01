@@ -17,7 +17,7 @@ async function formSend(e) {
 	// с помощью formData вытягиваю все данные полей
 	let formData = new FormData(form);
 
-	let response = await fetch('../sendmail.php', {
+	let response = await fetch('sendmail.php', {
 		method: 'POST',
 		body: formData,
 		// методом post данные форм дата отправляются в файл sendmail.php, который будет фозвращать json ответ
