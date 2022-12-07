@@ -463,8 +463,8 @@ body.lock {
 }
 
 .form__item._error {
-  -webkit-box-shadow: 0 0 15px #dd6c4a;
-          box-shadow: 0 0 15px #dd6c4a;
+  -webkit-box-shadow: 0 0 30px #dd6c4a;
+          box-shadow: 0 0 30px #dd6c4a;
   border-radius: 10px;
 }
 
