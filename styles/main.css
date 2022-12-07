@@ -181,6 +181,7 @@ h6 {
   top: 0;
 }
 .button__contacnt {
+  /* padding: 20px 46px; */
   background: none;
   color: #FFFFFF;
   font-family: "Roboto Slab";
@@ -917,28 +918,6 @@ body.lock {
           align-items: center;
   text-align: center;
 }
-
-.download__button {
-  background: none;
-  color: #000000;
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.33rem;
-  line-height: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-.download__img {
-  width: 40px;
-  height: 40px;
-}
-
 /* планшет - tablet */
 @media (max-width: 991.98px) {
   .about-me__border {
