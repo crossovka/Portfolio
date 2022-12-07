@@ -11,7 +11,7 @@ $(document).ready(function () {
 		slidesToScroll: 2,
 		// скорость перелистывания при нажатии на точку
 		speed: 2500,
-		pauseOnHover: true,
+		// pauseOnHover: true,
 		// автоплей
 		autoplay: true,
 		autoplaySpeed: 2700,
