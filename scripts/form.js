@@ -17,11 +17,30 @@ async function formSend(e) {
 	// с помощью formData вытягиваю все данные полей
 	let formData = new FormData(form);
 
-	let response = await fetch('./sendmail.php', {
-		method: 'POST',
-		body: formData,
-		// методом post данные форм дата отправляются в файл sendmail.php, который будет фозвращать json ответ
-	});
+	function sendMail() {
+		var params = {
+			name: document.getElementById("name").value,
+			email: document.getElementById("email").value,
+			theme: document.getElementById("theme").value,
+			message: document.getElementById("text").value,
+		};
+
+		const serviceId = "service_q17ckzi";
+		const templateId ="template_nblvrys";
+
+		email.js
+			.send(serviceId, templateId, params)
+			.then((res) => {
+				document.getElementById("name").value = "";
+				document.getElementById("email").value = "";
+				document.getElementById("theme").value = "";
+				document.getElementById("text").value = "";
+				console.log(res);
+				alert("Ваше сообщение успешно отправлено");
+			});
+			.catch((err) => console.log(err));
+	}
+
 	if (response.ok) {
 		let result = await response.json();
 		alert(result.message);
