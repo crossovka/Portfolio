@@ -38,7 +38,7 @@ async function formSend(e) {
 				console.log(res);
 				alert("Ваше сообщение успешно отправлено");
 			});
-			.catch((err) => console.log(err));
+			// .catch((err) => console.log(err));
 	}
 
 	if (response.ok) {
