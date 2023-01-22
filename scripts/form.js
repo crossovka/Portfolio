@@ -1,10 +1,9 @@
 'use strict';
 
 $(document).ready(function () {
-	const form = $('#form');
-	console.log(form);
 	// при отправки формы должно переходить в функцию form send
-	form.on('submit', formSend);
+	$('#form').on('submit', formSend);
+	$('.button__contacnt').on('onclick', sendMail);
 });
 
 async function formSend(e) {
@@ -12,47 +11,47 @@ async function formSend(e) {
 
 	formValidate($('#form'));
 
-	console.log('everything ok, continuing');
+	console.log('validation ok, continuing');
 
-	// с помощью formData вытягиваю все данные полей
-	let formData = new FormData(form);
+	sendMail();
 
-	function sendMail() {
-		var params = {
-			name: document.getElementById('name').value,
-			email: document.getElementById('email').value,
-			theme: document.getElementById('theme').value,
-			message: document.getElementById('text').value,
-		};
-
-		const serviceId = 'service_q17ckzi';
-		const templateId = 'template_nblvrys';
-
-		emailjs.send(serviceId, templateId, params).then((res) => {
-			document.getElementById('name').value = '';
-			document.getElementById('email').value = '';
-			document.getElementById('theme').value = '';
-			document.getElementById('text').value = '';
-			console.log(res);
-			alert('Ваше сообщение успешно отправлено');
-		});
-		// .catch((err) => console.log(err));
-	}
-
-	if (response.ok) {
-		let result = await response.json();
-		alert(result.message);
-		// чистка формы при отправке
-		form.reset();
-	} else {
-		alert('ошибка');
-	}
+	// if (response.ok) {
+	// 	let result = await response.json();
+	// 	alert(result.message);
+	// 	// чистка формы при отправке
+	// 	form.reset();
+	// } else {
+	// 	alert('ошибка');
+	// }
 
 	// отменяет стандартное поведение кнопки и теперь действия будут происходить в js нижу
 
 	// валидация форм
 
 	// созданной переменной передаю работу функции formValidate
+}
+
+function sendMail() {
+	var params = {
+		name: document.getElementById('name').value,
+		email: document.getElementById('email').value,
+		theme: document.getElementById('theme').value,
+		message: document.getElementById('text').value,
+	};
+
+	const serviceId = 'service_q17ckzi';
+	const templateId = 'template_nblvrys';
+
+	emailjs.send(serviceId, templateId, params).then((res) => {
+		document.getElementById('name').value = '';
+		document.getElementById('email').value = '';
+		document.getElementById('theme').value = '';
+		document.getElementById('text').value = '';
+		console.log(res);
+		alert('Ваше сообщение успешно отправлено');
+		create;
+	});
+	// .catch((err) => console.log(err));
 }
 
 function formValidate(form) {
